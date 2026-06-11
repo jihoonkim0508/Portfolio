@@ -3,193 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="명지전문대학 AI게임소프트웨어학과 김지훈 개발자 포트폴리오">
+  <meta name="description" content="김지훈 개발자 포트폴리오. Unity와 C# 기반 게임 개발, Python 자동화, AI 활용을 학습하고 프로젝트에 적용합니다.">
   <title>김지훈 | Developer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;800;900&family=Nunito+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="주요 메뉴">
-      <a class="brand" href="#top">김지훈</a>
-      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+  <div class="site-shell">
+    <nav class="menubar" aria-label="Primary navigation">
+      <a class="menubar-title" href="#top">Jihoon</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
         <span></span>
         <span></span>
       </button>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#roadmap">Roadmap</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="menubar-items">
+        <a href="#about">ABOUT</a>
+        <a href="#tech-stack">TECH STACK</a>
+        <a href="#professional-projects">TEAM PROJECT</a>
+        <a href="#personal-work">PERSONAL WORK</a>
+        <a href="https://github.com/jihoonkim0508" target="_blank" rel="noreferrer">GITHUB</a>
+        <a href="#contact">CONTACT</a>
+      </div>
     </nav>
-  </header>
 
-  <main id="top">
-    <section class="hero container" id="about">
-      <p class="eyebrow">AI Game Software Student · Developer Portfolio</p>
-      <h1>구조와 자동화를 고민하며 실제 문제를 해결하는 개발자, 김지훈입니다.</h1>
-      <p class="hero-copy">
-        명지전문대학 AI게임소프트웨어학과 2학년으로, AI 활용과 자동화, 개발, 수익 창출에 관심이 있습니다.
-        단순 구현을 넘어 유지보수 가능한 구조와 아키텍처를 설계하는 개발자로 성장하고 있습니다.
-      </p>
-      <div class="hero-actions">
-        <a class="button primary" href="#projects">프로젝트 보기</a>
-        <a class="button secondary" href="https://github.com/jihoonkim0508" target="_blank" rel="noreferrer">GitHub</a>
-      </div>
-    </section>
+    <header class="hero" id="top">
+      <img src="assets/Stella.png" alt="Stella">
+      <button class="hero-expand" type="button" aria-label="Expand hero preview">[]</button>
+    </header>
 
-    <section class="section roadmap-section" id="roadmap">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Career Roadmap</p>
-          <h2>1-3-5 커리어 로드맵</h2>
-        </div>
-        <div class="roadmap-grid">
-          <article class="roadmap-card featured">
-            <span class="timeline">5년 후</span>
-            <h3>장기 비전</h3>
-            <p>
-              AI와 자동화를 활용해 반복 업무를 줄이고, 실제 문제를 해결하는 서비스를 설계·개발하는
-              소프트웨어 엔지니어가 된다. 단순 기능 구현이 아니라 구조와 유지보수성을 고려한 시스템을
-              설계하며, 게임·웹·AI 기술을 연결할 수 있는 개발자로 성장한다.
-            </p>
-          </article>
-          <article class="roadmap-card">
-            <span class="timeline">3년 후</span>
-            <h3>중기 목표 OKR</h3>
-            <p class="objective">AI와 자동화 기술을 활용한 실무형 서비스를 직접 설계하고 운영할 수 있는 개발자가 된다.</p>
-            <ul>
-              <li>사용자 100명 이상이 실제 사용하는 웹 또는 게임 서비스 1개 운영</li>
-              <li>팀 프로젝트에서 아키텍처 설계 및 백엔드 구조 리딩 경험 확보</li>
-              <li>AI API 자동화 기능 구현 프로젝트 3개 이상 완성</li>
-              <li>GitHub 포트폴리오 및 기술 문서 30개 이상 작성</li>
-              <li>인턴 또는 실무 프로젝트 경험 최소 1회 확보</li>
-            </ul>
-          </article>
-          <article class="roadmap-card">
-            <span class="timeline">1년 후</span>
-            <h3>단기 SMART 목표</h3>
-            <ul>
-              <li>2027년 5월까지 GitHub 프로젝트 10개 이상 업로드</li>
-              <li>Unity 또는 웹 기반 팀 프로젝트 2개 이상 완료</li>
-              <li>포트폴리오 웹사이트 정식 배포 및 월 1회 이상 업데이트</li>
-              <li>알고리즘 문제 150문제 이상 해결</li>
-              <li>Docker + GitHub Actions 기반 자동 배포 환경 구축</li>
-              <li>AI API 개인 프로젝트 2개 제작</li>
-              <li>공모전 또는 캡스톤 프로젝트 1회 이상 참여</li>
-              <li>기술 블로그 글 20개 이상 작성</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section container" aria-labelledby="highlight-title">
-      <div class="section-heading">
-        <p class="eyebrow">Highlighted Project</p>
-        <h2 id="highlight-title">ResetFlow</h2>
-      </div>
-      <article class="highlight-card">
-        <div class="placeholder" aria-label="ResetFlow 프로젝트 이미지 자리"></div>
-        <div class="highlight-content">
-          <div class="tag-row">
-            <span>Automation</span>
-            <span>Developer Tool</span>
-            <span>Architecture</span>
-          </div>
-          <h3>개발 환경 자동화와 실행 흐름 정리를 목표로 한 프로젝트</h3>
-          <p>
-            반복되는 개발 준비 과정을 줄이고, 실행 순서를 명확하게 정리해 프로젝트 시작과 유지보수를
-            더 안정적으로 만드는 데 초점을 둔 대표 프로젝트입니다.
-          </p>
-          <div class="card-actions">
-            <a class="button primary" href="https://github.com/jihoonkim0508" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="button secondary" href="#" aria-label="ResetFlow 데모 링크">Demo</a>
+    <main>
+      <section class="section section-blue" id="about">
+        <div class="section-content">
+          <h1 class="title title-big">About Me</h1>
+          <div class="copy">
+            <p>게임 개발을 중심으로 응용프로그램과 AI 분야까지 학습하고 있는 학부생입니다.</p>
+            <p>Unity와 C#을 활용한 게임 개발에 관심이 있으며, Python을 이용한 자동화와 AI 활용도 함께 공부하고 있습니다.</p>
+            <p>여러 기술을 단순히 배우는 것에 그치지 않고, 실제 프로젝트에 적용할 수 있는 개발 역량을 쌓는 것을 목표로 하고 있습니다.</p>
           </div>
         </div>
-      </article>
-    </section>
+      </section>
 
-    <section class="section container" id="projects">
-      <div class="section-heading">
-        <p class="eyebrow">Projects</p>
-        <h2>프로젝트</h2>
-      </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-thumb"></div>
-          <h3>ResetFlow</h3>
-          <p><strong>역할:</strong> 기획, 구조 설계, 구현</p>
-          <p><strong>핵심 기능:</strong> 개발 환경 자동화, 실행 흐름 정리, 문서화</p>
-          <div class="tag-row"><span>Python</span><span>GitHub</span><span>Automation</span></div>
-          <a href="https://github.com/jihoonkim0508" target="_blank" rel="noreferrer">GitHub 보기</a>
-        </article>
-        <article class="project-card">
-          <div class="project-thumb alt-1"></div>
-          <h3>Stella</h3>
-          <p><strong>역할:</strong> 게임 시스템 개발</p>
-          <p><strong>핵심 기능:</strong> 캐릭터 흐름, UI, 게임 루프 구성</p>
-          <div class="tag-row"><span>Unity</span><span>C#</span><span>Game</span></div>
-          <a href="https://github.com/jihoonkim0508" target="_blank" rel="noreferrer">GitHub 보기</a>
-        </article>
-        <article class="project-card">
-          <div class="project-thumb alt-2"></div>
-          <h3>AI Automation Tool</h3>
-          <p><strong>역할:</strong> 자동화 기능 설계 및 구현</p>
-          <p><strong>핵심 기능:</strong> AI API 연동, 반복 작업 자동화, 결과 정리</p>
-          <div class="tag-row"><span>AI API</span><span>JavaScript</span><span>Tool</span></div>
-          <a href="https://github.com/jihoonkim0508" target="_blank" rel="noreferrer">GitHub 보기</a>
-        </article>
-        <article class="project-card">
-          <div class="project-thumb alt-3"></div>
-          <h3>Portfolio Website</h3>
-          <p><strong>역할:</strong> 디자인, 퍼블리싱, 배포 준비</p>
-          <p><strong>핵심 기능:</strong> 반응형 레이아웃, 프로젝트 카드, 커리어 로드맵</p>
-          <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a href="https://github.com/jihoonkim0508" target="_blank" rel="noreferrer">GitHub 보기</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section skills-section" id="skills">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>기술 스택</h2>
+      <section class="section section-intro" id="tech-stack">
+        <div class="section-content">
+          <h2 class="title title-med">Tech Stack</h2>
+          <div class="tech-grid" aria-label="Tech stack">
+            <article class="tech-card">
+              <h3>Language</h3>
+              <ul>
+                <li class="tech-cpp">C++</li>
+                <li class="tech-csharp">C#</li>
+                <li class="tech-python">Python</li>
+                <li class="tech-java">Java</li>
+              </ul>
+            </article>
+            <article class="tech-card">
+              <h3>Engine</h3>
+              <ul>
+                <li class="tech-unity">Unity</li>
+                <li class="tech-unreal">Unreal Engine</li>
+              </ul>
+            </article>
+            <article class="tech-card">
+              <h3>AI / ML</h3>
+              <ul>
+                <li class="tech-scikit">scikit-learn</li>
+                <li class="tech-tensorflow">TensorFlow</li>
+              </ul>
+            </article>
+            <article class="tech-card">
+              <h3>Front-end</h3>
+              <ul>
+                <li class="tech-html">HTML</li>
+                <li class="tech-css">CSS</li>
+                <li class="tech-javascript">JavaScript</li>
+              </ul>
+            </article>
+          </div>
         </div>
-        <div class="skills-list" aria-label="보유 기술">
-          <span>Python</span>
-          <span>C#</span>
-          <span>Unity</span>
-          <span>Git/GitHub</span>
-          <span>Docker</span>
-          <span>HTML/CSS/JavaScript</span>
-          <span>AI API 활용</span>
-          <span>프로젝트 구조 설계</span>
+      </section>
+
+      <section class="section section-intro" id="professional-projects">
+        <div class="section-content compact">
+          <h2 class="title title-med">Highlighted Project</h2>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section container contact" id="contact">
-      <div class="section-heading">
-        <p class="eyebrow">Contact</p>
-        <h2>연락처</h2>
-      </div>
-      <p>프로젝트 협업, 인턴십, 개발 관련 문의는 아래 연락처로 편하게 남겨주세요.</p>
-      <div class="contact-links">
-        <a href="https://github.com/jihoonkim0508" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="mailto:kdhkdh181@gmail.com">kdhkdh181@gmail.com</a>
-      </div>
-    </section>
-  </main>
+      <section class="work-band">
+        <div class="container">
+          <article class="highlight-card">
+            <a class="project-image highlight-image" href="https://github.com/jihoonkim0508/Stella" target="_blank" rel="noreferrer">
+              <img src="assets/Stella.png" alt="Stella 프로젝트 미리보기">
+            </a>
+            <h3>Stella</h3>
+            <p>Stella는 Unity 기반 3D 로그라이트 프로젝트입니다.</p>
+            <p>별자리 콘셉트를 바탕으로 전투, 독창적인 스킬 시스템, 보스전, 스테이지 진행 구조를 구현했습니다.</p>
+            <h4>주요 작업</h4>
+            <ul class="contrib-list highlight-list">
+              <li>플레이어 조작</li>
+              <li>전투 타격감</li>
+              <li>스테이지 진행 구조</li>
+            </ul>
+            <h4>Tech Stack</h4>
+            <div class="tag-row">
+              <span class="tag unity">Unity</span>
+              <span class="tag csharp">C#</span>
+              <span class="tag github">GitHub</span>
+            </div>
+          </article>
+        </div>
+      </section>
 
-  <footer class="site-footer">
-    <p>© 2026 김지훈. Built with HTML, CSS, JavaScript.</p>
-  </footer>
+      <section class="section section-intro">
+        <div class="section-content compact">
+          <h2 class="title title-med">Team Project</h2>
+        </div>
+      </section>
+
+      <section class="work-band">
+        <div class="container">
+          <div class="project-grid" id="professional-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section-intro" id="personal-work">
+        <div class="section-content compact">
+          <h2 class="title title-med">Personal Work</h2>
+        </div>
+      </section>
+
+      <section class="work-band">
+        <div class="container">
+          <div class="project-grid" id="personal-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section-blue" id="contact">
+        <div class="section-content">
+          <h2 class="title title-big">Contact</h2>
+          <p class="section-note">For project collaboration, internships, or development questions, contact me here.</p>
+          <div class="social-links">
+            <a href="https://github.com/jihoonkim0508" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:kdhkdh181@gmail.com">Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Copyright &copy; 2026 by 김지훈 | Developer Portfolio</span>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
